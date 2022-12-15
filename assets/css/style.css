@@ -40,6 +40,18 @@ a {
     color: white;
 }
 
+#about {
+    display: flex;
+}
+
+#portfolio {
+    display: flex;
+}
+    
+#contact {
+    display: flex;
+}
+
 footer {
     display: flex;
     justify-content: center;
@@ -47,4 +59,10 @@ footer {
     background-color: var(--baby-blue);
     color: #fff;
     border-style: ridge;
+}
+
+@media screen{
+    #about-me {
+    display: block;
+}
 }
