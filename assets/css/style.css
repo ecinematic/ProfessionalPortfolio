@@ -1,5 +1,5 @@
 :root {
-    --baby-blue: #3ADBFC;
+    --baby-blue: #fccb3a;
 }
 
 header {
@@ -42,6 +42,11 @@ a {
 
 #about {
     display: flex;
+    padding-top: 1%;
+}
+
+#about-me-description {
+    font-size: larger;
 }
 
 #portfolio {
@@ -52,17 +57,28 @@ a {
     display: flex;
 }
 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+}
+
+h3 {
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+}
+
 footer {
     display: flex;
     justify-content: center;
     padding: 1%;
     background-color: var(--baby-blue);
-    color: #fff;
+    color: rgb(0, 0, 0);
     border-style: ridge;
-}
-
-@media screen{
-    #about-me {
-    display: block;
-}
 }
