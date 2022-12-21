@@ -1,5 +1,12 @@
 :root {
-    --baby-blue: #fccb3a;
+    --main-color: #fccb3a;
+    --secondary-color: #fff;
+    --third-color: rgb(255, 128, 2);
+    --fourth-color: rgb(255, 234, 3);
+}
+
+* {
+
 }
 
 header {
@@ -7,8 +14,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1%;
-    background-color: var(--baby-blue);
-    color: #fff;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
     border-style: ridge;
 }
 
@@ -17,8 +24,13 @@ h1 {
 }
 
 nav {
-    background-color: var(--baby-blue);
+    background-color: var(--main-color);
     border-style: none;
+}
+
+nav li a {
+    color:var(--secondary-color);
+    white-space: nowrap;
 }
 
 .nav-text {
@@ -27,7 +39,7 @@ nav {
 }
 
 .nav-text a:hover {
-    color: purple;
+    color: var(--third-color);
 }
 
 li {
@@ -36,32 +48,106 @@ li {
     text-decoration: none;
 }
 
-a {
-    color: white;
+#title {
+    margin-left: 25px;
+}
+
+#portfolio-content {
+    margin: auto;
+    width: 50%;
+    padding: 10px;      
+}
+
+#main-box {
+    text-align: center;
+}
+
+#second-level-boxes {
+    display: flex;
+}
+
+#third-level-boxes {
+    display: flex;
 }
 
 #about {
     display: flex;
     padding-top: 1%;
+    align-items: center;
 }
 
 #about-me-description {
     font-size: larger;
+    margin: 25px;
 }
 
 #portfolio {
     display: flex;
+    align-items: center;
+    
 }
     
 #contact {
     display: flex;
+    align-items: center;
 }
 
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
+#about img{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 205px;
+}
+
+#portfolio img{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 205px;
+}
+
+#contact img{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 205px;
+}
+
+#main-box a img {
+    margin: auto;
+    padding: 10px;
+    width: 500px;
+}
+
+#main-box a img:hover {
+    border: 3px solid var(--third-color);
+}
+
+#project2 a img:hover {
+    padding: 3px;
+    border: 3px solid var(--fourth-color);
+}
+
+#project3 a img:hover {
+    padding: 3px;
+    border: 3px solid var(--fourth-color);
+}
+
+#project4 a img:hover {
+    padding: 3px;
+    border: 3px solid var(--fourth-color);
+}
+
+#project5 a img:hover {
+    padding: 3px;
+    border: 3px solid var(--fourth-color);
+}
+
+#project6 a img:hover {
+    padding: 3px;
+    border: 3px solid var(--fourth-color);
+}
+
+#project7 a img:hover {
+    padding: 3px;
+    border: 3px solid var(--fourth-color);
 }
 
 h2 {
@@ -74,11 +160,70 @@ h3 {
     font-family:'Courier New', Courier, monospace;
 }
 
+#contact-content p {
+    font-size: larger;
+    margin: 25px;
+    text-align: center;
+}
+
 footer {
+    font-size: large;
     display: flex;
     justify-content: center;
     padding: 1%;
-    background-color: var(--baby-blue);
-    color: rgb(0, 0, 0);
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    font-size: 25px;
     border-style: ridge;
 }
+
+
+@media only screen and (max-width: 1100px) {
+    h1 {
+        font-size: 200%;
+    }
+
+    .nav-text {
+        text-align: right;
+        font-size: 30px;
+    }
+
+    #about {
+        display: block;
+        text-align: center;
+    }
+
+    #portfolio {
+        display: block;
+        text-align: center;
+    }
+
+    #contact {
+        margin-top: 15px;
+        display: block;
+        text-align: center;
+    }
+
+    #main-box {
+        display: block;
+        text-align: center;
+    }
+
+    #main-box a img {
+        margin: auto;
+        border: 3px solid var(--third-color);
+        padding: 10px;
+        width: 205px;
+    }
+
+    #second-level-boxes {
+        display: block;
+        text-align: center;
+    }
+    
+    #third-level-boxes {
+        display: block;
+        text-align: center;
+    }
+   
+  }
